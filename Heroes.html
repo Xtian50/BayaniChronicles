@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes - BayaniChronicles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #ddd;
+            text-align: center;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 20px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffdd57;
+        }
+        main {
+            padding: 30px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #111;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .flip-card {
+            background-color: transparent;
+            width: 100%;
+            height: 300px;
+            perspective: 1000px;
+        }
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+        }
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .flip-card-front {
+            background-color: #007bff;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+        .flip-card-front img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .flip-card-back {
+            background-color: #0056b3;
+            color: white;
+            transform: rotateY(180deg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .flip-card-back a {
+            color: #ffdd57;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: color 0.3s;
+        }
+        .flip-card-back a:hover {
+            color: #fff;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #007bff;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Philippine Heroes</h1>
+        <p>Discover the Brave Men and Women Who Shaped the Nation</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Heroes.html">Heroes</a>
+        <a href="History.html">History</a>
+    </nav>
+
+    <main>
+        <h2>Meet the Heroes</h2>
+        <div class="card-container">
+            <!-- Hero Card 1 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="jose_rizal.jpg" alt="Jose Rizal">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Jose Rizal</h3>
+                        <p>Writer, patriot, and martyr.</p>
+                        <a href="rizal-lore.html">Read Lore</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Card 2 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="andres_bonifacio.jpg" alt="Andres Bonifacio">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Andres Bonifacio</h3>
+                        <p>Father of the Philippine Revolution.</p>
+                        <a href="bonifacio-lore.html">Read Lore</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Card 3 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="emilio_aguinaldo.jpg" alt="Emilio Aguinaldo">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Emilio Aguinaldo</h3>
+                        <p>First President of the Philippines.</p>
+                        <a href="aguinaldo-lore.html">Read Lore</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Card 4 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="gabriela_silang.jpg" alt="Gabriela Silang">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Gabriela Silang</h3>
+                        <p>Revolutionary leader and symbol of resistance.</p>
+                        <a href="silang-lore.html">Read Lore</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Card 5 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="antonio_luna.jpg" alt="Antonio Luna">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Antonio Luna</h3>
+                        <p>Brilliant military strategist.</p>
+                        <a href="luna-lore.html">Read Lore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BayaniChronicles. All rights reserved.</p>
+    </footer>
+</body>
+</html>
