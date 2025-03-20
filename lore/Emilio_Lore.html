@@ -1,144 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Emilio Aguinaldo - Lore | BayaniChronicles</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-      width: 100%;
-      height: 100%;
-      font-family: 'Poppins', sans-serif;
-      background-color: #000;
-      color: #ddd;
-      text-align: center;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #007bff;
-      color: white;
-      padding: 20px 0;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #0056b3;
-      padding: 10px 0;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 0 20px;
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #ffdd57;
-    }
-    main {
-      padding: 30px 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-      background-color: #111;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-      border-radius: 10px;
-    }
-    section {
-      margin-bottom: 30px;
-    }
-    h1, h2, h3, p {
-      margin: 10px 0;
-    }
-    h1 {
-      font-size: 3em;
-      font-weight: 800;
-    }
-    h2 {
-      font-size: 2.5em;
-      font-weight: 700;
-    }
-    h3 {
-      font-size: 2em;
-      font-weight: 600;
-    }
-    p {
-      font-size: 1.2em;
-      font-weight: 400;
-    }
-    footer {
-      text-align: center;
-      padding: 10px 0;
-      background-color: #007bff;
-      color: white;
-      margin-top: 20px;
-    }
-    .back-button {
-      display: inline-block;
-      margin: 20px 0;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-    .back-button:hover {
-      background-color: #0056b3;
-    }
-    .hero-image {
-      max-width: 300px;
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Lapu-Lapu - BayaniChronicles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Marcellus', serif;
+            background: #001F54;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #CE1126;
+            padding: 20px;
+            font-size: 1.8em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+            letter-spacing: 2px;
+        }
+        nav {
+            background: #FFCC00;
+            padding: 12px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        nav a {
+            color: #0033A0;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 12px 20px;
+            border-radius: 5px;
+            transition: 0.3s ease-in-out;
+        }
+        nav a:hover {
+            background: #0033A0;
+            color: white;
+        }
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #0A0A0A;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .video-container {
+            margin-top: 20px;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            margin-top: 30px;
+            background: #CE1126;
+            padding: 15px;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>BayaniChronicles</h1>
-    <p>The Lives of the Philippine Heroes in Motion</p>
-  </header>
+    <header>
+        <h1>Lapu-Lapu</h1>
+        <p>Datu ng Mactan</p>
+    </header>
+    <nav>
+        <a href="../index.html">🏠 Home</a>
+        <a href="../Heroes.html">🔙 Back to Heroes</a>
+    </nav>
+    <main>
+        <p>Si Lapu-Lapu ay isang datu ng Mactan at isa sa mga unang bayaning Pilipino na lumaban sa pananakop ng mga Espanyol. Pinamunuan niya ang tagumpay ng kanyang hukbo laban kay Ferdinand Magellan sa Labanan sa Mactan noong 1521.</p>
 
-  <nav>
-    <a href="../index.html">Home</a>
-    
-  </nav>
-
-  <main>
-    <a href="../Heroes.html" class="back-button">&larr; Back to Heroes</a>
-    
-    <section>
-      <h2>Emilio Aguinaldo</h2>
-      <p><em>First President of the Philippines</em></p>
-      <img src="../images/HeroPortrait/emilio_portrait.png" alt="Emilio Aguinaldo" class="hero-image">
-    </section>
-
-    <section>
-      <h3>Biography</h3>
-      <p>
-        Emilio Aguinaldo played a crucial role in the Philippine Revolution against Spanish colonial rule.
-        Rising to prominence as a military leader, he eventually became the first President of the Philippines.
-      </p>
-      <p>
-        His leadership was marked by significant battles and strategic decisions that shaped the nation's fight for independence.
-      </p>
-    </section>
-
-    <section>
-      <h3>Legacy</h3>
-      <p>
-        Aguinaldo's contributions to the founding of the nation and his role in its early governance remain a subject
-        of debate and admiration. His legacy is a reminder of the complex path to Philippine independence.
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 BayaniChronicles. All rights reserved.</p>
-  </footer>
+        <div class="video-container">
+            <h2>📽 Panoorin: The Battle of Mactan</h2>
+            <video src="Lore Videos/lapu_vid.mp4" autoplay muted loop controls></video>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 BayaniChronicles. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>

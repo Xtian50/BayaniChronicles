@@ -39,14 +39,14 @@
             padding: 10px 0;
         }
         nav a {
-            color: white;
+            color: rgb(0, 0, 0);
             text-decoration: none;
             padding: 0 20px;
             font-weight: 600;
             transition: color 0.3s;
         }
         nav a:hover {
-            color: #ffdd57;
+            color: #ffffff;
         }
         main {
             padding: 30px 20px;
@@ -176,7 +176,6 @@
             color: #fff;
         }
 
-        /* Media query for mobile responsiveness */
         @media (max-width: 600px) {
             h1 {
                 font-size: 2em;
@@ -199,12 +198,14 @@
         <h1>BayaniChronicles</h1>
         <p>The Lives of the Philippine Heroes in Motion</p>
     </header>
-
+    
     <nav>
-        <a href="#home">Home</a>
-        <a href="Heroes.html">Heroes</a>
-        <a href="History.html">History</a>
-        <a href="#contact">Contact</a>
+        <div style="text-align: center;">
+            <a href="Heroes.html">Heroes</a> 
+            <a href="History.html">History</a> 
+            <a href="Reference.html">Reference</a>
+            <a href="Developers.html">Developers</a>
+        </div>
     </nav>
 
     <main>
@@ -225,6 +226,7 @@
                         <p class="title">Overview</p>
                         <p>The fight for freedom shaped the Philippines as we know it today.</p>
                     </div>
+                    
                 </div>
             </div>
 
